@@ -28,7 +28,6 @@ export const selectGenre = genre => dispatch => {
   });
 
   dispatch(fetchGenreArtists(genre.id));
-  console.log(history.location);
 
   const genreAtristRoute = `/genres/${genre.id}`;
   genreAtristRoute !== history.location.pathname && history.push(genreAtristRoute);
